@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark</title>
+    <link rel="stylesheet" type="text/css" href="Css/spark style.css">
+    <script src="Java Script/lets.js"></script>
+    <script
+        src="https://kit.fontawesome.com/8fbd5a6d60.js" crossorgin="anonymous">
+    </script>
+</head>
+<body>
+  <header>
+  <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    
+        <label class="logo"><span class="first-letter">S</span>park</label>
+        <ul>
+           
+           <li><a href="users.html">Create a New User</a></li>
+           <li><a href="transfer.html">Transfer money</a></li>
+           <li><a href="userdetails.html">View Users</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a class="log-in" href="login.html">Log In</a></li>
+           <li><a class="sign-in"href="signin.html">Sign Up</a></li>
+        </ul>
+  </nav>
+  </header>
+  <main>
+  <div class="content">
+    <p class="contentpara">Banking &</p>
+    <p class="contentpara">Budegeting, made</p>
+    <p class="contentpara">Simple</p> 
+    <br>
+    <p class="sub-content">Master Your Money with One Easy Way!</p>
+    <img src="images/images.jpeg">
+    <input type="email" name="email" placeholder="   Your Email" id="email">
+    <button onclick="goBack()">Start Now</button>
+    <p class="deep"><a href="#">Click Here</a> to view our privacy for information on how we protect and via data you provide.<br><br><a href='#' class="already-customer">Already a Customer? Get started</a></p>
+  </div>
+  </main>
+  <footer class="foot">
+    <p>&copy 2021 Made By Sathish Kumar</p>
+</footer>
+<script>
+   function goBack(){
+    alert("Register Sucessfully");
+    document.getElementById('email').value='';
+   }
+</script>
+</body>
+</html>

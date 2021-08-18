@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Spark</title>
+	<style>
+		*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+   body{
+	    background-color: silver;
+	    background-size: 100%;
+    }
+    nav{
+	    height: 80px;
+	    width: 100%;
+
+    }
+    label.logo{
+	   color: black;
+	   font-size: 35px;
+	   line-height: 80px;
+	   padding: 0 100px;
+	   font-weight: bold;
+	   font-style: italic;
+    }
+    nav ul{
+	    float: right;
+	    margin-right: 20px;
+    }
+    nav ul li{
+	    display: inline-block;
+	    line-height: 80px;
+	    margin: 0 5px;
+    }
+    nav ul li a{
+     color: black;
+    font-size: 1rem;
+    padding: 7px 5px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight:bold;
+    font-style: italic;
+    font-family: arial, sans-serif;
+    }
+    a:hover{
+	   color: #4c78d9;
+	   transition: .5s;
+    }
+    .actives{
+       	color: #4c78d9;
+    }
+    .first-letter{
+       font-size: 4rem;
+    }
+    @media (max-width: 952px){
+	    label.logo{
+	        font-size: 30px;
+	        padding-left: 50px;
+	    }
+	    nav ul li a{
+	        font-size: 16px;
+	    }
+    }
+    @media (max-width: 895px){
+	    .checkbtn{
+	        display: block;
+	    }
+	    ul{
+	        position: fixed;
+	        width: 100%;
+	        height: 100vh;
+	        background: #f4f4f4;
+	        top: 80px;
+	        left: -100%;
+	        text-align: center;
+	        transition: all .5s;
+
+	       }
+	       nav ul li{
+	        display: block;
+	        margin: 50px 0;
+	        line-height: 20px;
+	          
+	       }
+	       nav ul li a{
+	        font-size: 15px;
+
+	       }
+	       a:hover,1.active{
+	        background: none;
+	        color: #0082e6;
+	       }
+	       #check:checked ~ ul{
+	        left: 0;
+	       }
+    }
+     table{
+    	border-collapse: collapse;
+    	margin-left: 2px;
+    	margin-right: 2px;
+    }
+  tr,th,td{
+  	padding: 12px 90px;
+  	text-align: center;
+
+  }
+  td,th{
+  	border: 1px solid black;
+  	border-collapse: collapse;
+  }
+  th{
+  	background-color: #4c78d9;
+  	color: black;
+  	font-weight: bold;
+  	font-size: 1.1rem;
+  	font-family: sans-serif, arial;
+  	font-style: italic;
+  }
+ .tr1{
+ 	background-color: #f4f4f4;
+}
+ .tr1 a{
+ 	background-color: #4c78d9;
+ 	padding: 5px;
+  color:white;
+  border-radius: 5px;
+ }
+ .tr1 a:hover{
+ 	   color: black;
+ }
+  .tr2{
+  	background-color: silver;
+  }
+  .tr2 a{
+    background-color: #4c78d9;
+    padding: 5px;
+    color:white;
+     border-radius: 5px;
+ }
+ .tr2 a:hover{
+ 	   color: black;
+ }
+    footer{
+    background-color: #4c78d9;
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    font-style: italic;
+    font-family: arial, sans-serif;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+}
+@media (max-width:952px) {
+	tr,th,td{
+  	padding: 10px 60px;
+  	text-align: center;
+   }
+}
+@media (max-width:420px) {
+	tr,th,td{
+  	padding: 5px 5px;
+  	text-align: center;
+   }
+   th{
+  	background-color: #4c78d9;
+  	color: black;
+  	font-weight: bold;
+  	font-size: 0.8rem;
+  	font-family: sans-serif, arial;
+  	font-style: italic;
+  }
+  table{
+    	border-collapse: collapse;
+    	margin-left: 0;
+    	margin-top: 40px;
+    }
+}
+</style>
+</head>
+<body>
+  <header>
+	  <nav>
+	        <label class="logo"><span class="first-letter">S</span>park</label>
+	        <ul>
+	          <li><a href="Spark index.html">Home</a></li>
+	          <li><a href="sub-transaction.html">Transfer Money</a></li>
+	          <li><a href="#" class="actives">Transaction History</a></li>
+	          <li><a href="userdetails.html" >View Users</a></li>
+	           <li><a href="about.html">About</a></li>
+	        </ul>
+	  </nav>
+  </header>
+  <main>
+  	 <div class="table-container">
+  	 	<table>
+  	 	<tr class="tr1">
+  	 		<th>Sender</th>
+  	 		<th>Receiver</th>
+  	 		<th>Transfered Amount</th>
+  	 		<th>Current Balance</th>
+  	 	</tr>
+  	 	<tr class="tr2">
+  	 		<td>Sathish</td>
+  	 		<td>Mike Dane</td>
+  	 		<td>10000</td>
+  	 		<td>110000</td>
+  	 	</tr>
+  	 	<tr class="tr1">
+  	 		<td>Sathish</td>
+  	 		<td>Tom</td>
+  	 		<td>30000</td>
+  	 		<td>270000</td>
+  	 		
+  	 	</tr>
+  	 	<tr class="tr2">
+  	 		<td>Sathish</td>
+  	 		<td>Hardy</td>
+  	 		<td>240000</td>
+  	 		
+  	 	</tr>
+  	 	<tr class="tr1">
+  	 		<td>04</td>
+  	 		<td>John Smith</td>
+  	 		<td>johnsmith@gmail.com</td>
+  	 		<td>200000</td>
+  	 		
+  	 	</tr>
+  	 	<tr class="tr2">
+  	 		<td>05</td>
+  	 		<td>Mosh</td>
+  	 		<td>mosh@gmail.com</td>
+  	 		<td>360000</td>
+  	 		
+  	 	</tr>
+  	 	<tr class="tr1">
+  	 		<td>06</td>
+  	 		<td>Jackson</td>
+  	 		<td>jackson@gmail.com</td>
+  	 		<td>500000</td>
+  	 		
+  	 	</tr>
+  	 	<tr class="tr2">
+  	 		<td>07</td>
+  	 		<td>John Doe</td>
+  	 		<td>johndoe@gmail.com</td>
+  	 		<td>540000</td>
+  	 		
+  	 	</tr>
+  	 	<tr class="tr1">
+  	 		<td>08</td>
+  	 		<td>Mitchell</td>
+  	 		<td>mitchell@gmail.com</td>
+  	 		<td>640000</td>
+  	 		
+  	 	</tr>
+  	 	<tr class="tr2">
+  	 		<td>09</td>
+  	 		<td>Kane</td>
+  	 		<td>kane@gmail.com</td>
+  	 		<td>750000</td>
+  	 		
+  	 	</tr>
+  	 	<tr class="tr1">
+  	 		<td>10</td>
+  	 		<td>Robert</td>
+  	 		<td>robert@gmail.com</td>
+  	 		<td>810000</td>
+  	 		
+  	 	</tr>
+      </table>
+  	 </div>
+  </main>
+  <footer class="foot">
+    <p>&copy 2021 Made By Sathish Kumar</p>
+</footer>
+</body>
+</html>
